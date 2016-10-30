@@ -78,5 +78,22 @@ Spike rate expression coefficient vector of axon 1:
 Spike rate expression coefficient vector of axon 2:
 [0.5 3]
 ```
+
+Or use an old configuration file.  
+```
+Truenorth SNN Architecture Simulator V0.02
+[1] Configure a new network
+[2] Use an old configuration file(.mat)
+2
+Input the configuration file name:
+./mmat/adder.mat
+Input the coefficient vector of spike rate expression for every axon.
+Linear expressions only. For example, if the expression is x+2, input [1 2]. 
+Spike rate expression coefficient vector of axon 1:
+[0.2 1]
+Spike rate expression coefficient vector of axon 2:
+[0.5 3]
+
+```
 Output figure of this example:  
 ![Result](http://p1.bpimg.com/1949/09d7e023df88d0ce.png)
