@@ -17,7 +17,6 @@ if option == 1
   fprintf('Time interval :\n');
   time_interval = input('');
 
-  V = zeros(1, neu_num); %membrane potential
   w = zeros(axon_num, neu_num); %synapse connection
   s = zeros(axon_num, neu_num); %synaptic weight
   b = zeros(axon_num, neu_num); %synapse mode
@@ -39,14 +38,14 @@ if option == 1
     w(:, i) = input('');
     snp_num = sum(w(:, i));
     index = find(w(:, i) == 1);
-    fprintf('Synapse mode vector of neuron %d''s %d synapses:\n', i, snp_num);
+    fprintf('Synapse weight/probalility select vector of neuron %d''s %d synapses:\n', i, snp_num);
     b(index, i) = input('');
-    fprintf('Synapse weight vector of neuron %d''s %d synapses:\n', i, snp_num);
+    fprintf('Synapse weight/probalility vector of neuron %d''s %d synapses:\n', i, snp_num);
     s(index, i) = input('');
   end
-  fprintf('Leak mode vector of %d neurons:\n', neu_num);
+  fprintf('Leak weight/probalility select vector of %d neurons:\n', neu_num);
   c = input('');
-  fprintf('Leak weight vector of %d neurons:\n', neu_num);
+  fprintf('Leak weight/probalility vector of %d neurons:\n', neu_num);
   lamda = input('');
   fprintf('Leak-reversal flag vector of %d neurons:\n', neu_num);
   epsilon = input('');
@@ -60,7 +59,7 @@ if option == 1
   beta = input('');
   fprintf('Threshold PRN mask vector of %d neurons(0 to %d):\n', neu_num, PRNceil);
   M = input('');
-  fprintf('Negative thresh mode vector of %d neurons:\n', neu_num);
+  fprintf('Negative thresh: reset or saturate select vector of %d neurons:\n', neu_num);
   kapa = input('');
 
 elseif option == 2
@@ -71,6 +70,7 @@ else
   error('Please input a valid option!\n');
 end
 
+V = zeros(1, neu_num); %membrane potential
 axon = zeros(axon_num, time_interval); %axon input
 spike = zeros(neu_num, time_interval); %spike output
 in = zeros(axon_num, max_rate); %input of spike rate
@@ -128,8 +128,8 @@ fprintf('finished.\n');
 option2 = input('Save current configuration file?[y/n]', 's');
 if option2 == 'y' || option2 == 'Y'
   save_path = input('Save path:', 's');
-  save(save_path);
+  save(save_path, 'axon_num', 'neu_num', 'time_interval', 'w', 'b', 's', 'c', 'lamda', 'epsilon', 'gamma', 'R', 'alpha', 'beta', 'M', 'kapa', 'rho_s', 'rho_l', 'rho_t');
 elseif option2 == 'n' || option2 == 'N'
 else
-  error('Please answer y or n.\n');
+  error('Please answer y or n.');
 end
