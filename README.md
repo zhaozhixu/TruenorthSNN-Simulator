@@ -27,7 +27,7 @@ This is a simulator for IBM Truenorth SNN(Spike Neuron Network) architecture imp
   `Save current configuration file?[y/n]`  
   And next time when you start this simulator, you can reuse this configuration file.  
   
-4. There are a few configuration files in the `./omat` and `./mmat` folder which can perform arithmetic functions. You can test them by choosing the second mode and then type `./omat/(mat file name)` or `./mmat/(mat file name)`.  
+4. There are a few configuration files in the `./omat` and `./mmat` folder which can perform arithmetic functions. You can test them by choosing the second mode and then type `./omat/(mat file name)` or `./mmat/(mat file name)`. More details about these functions can be found in `./doc`.  
 
 5. The simulator will plot a figure indicating the input spike rate and output spike rate. The input curve is in green and the output curve is in red by default. The `plot` function receives 3 vectors(2 inputs and 1 output) in this code.  
   **Notice 4:** You may have to manually modify the `plot` function parameters to fit your own input and output.  
