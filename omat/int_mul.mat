@@ -1,0 +1,96 @@
+# Created by Octave 3.8.1, Mon Oct 31 22:56:59 2016 CST <favoryoung@favoryoung-PC>
+# name: axon_num
+# type: scalar
+1
+
+
+# name: neu_num
+# type: scalar
+1
+
+
+# name: time_interval
+# type: scalar
+150
+
+
+# name: V
+# type: scalar
+0
+
+
+# name: w
+# type: scalar
+1
+
+
+# name: b
+# type: scalar
+0
+
+
+# name: s
+# type: scalar
+2
+
+
+# name: c
+# type: scalar
+0
+
+
+# name: lamda
+# type: scalar
+0
+
+
+# name: epsilon
+# type: scalar
+0
+
+
+# name: gamma
+# type: scalar
+1
+
+
+# name: R
+# type: scalar
+0
+
+
+# name: alpha
+# type: scalar
+1
+
+
+# name: beta
+# type: scalar
+1
+
+
+# name: M
+# type: scalar
+0
+
+
+# name: kapa
+# type: scalar
+0
+
+
+# name: rho_s
+# type: scalar
+0
+
+
+# name: rho_l
+# type: scalar
+0
+
+
+# name: rho_t
+# type: scalar
+0
+
+
