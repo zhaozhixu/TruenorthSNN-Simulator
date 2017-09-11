@@ -99,4 +99,4 @@ Spike rate expression coefficient vector of axon 2:
 
 ```
 Output figure of this example:  
-![Result](http://p1.bpimg.com/1949/09d7e023df88d0ce.png)
+![Result](https://github.com/zhaozhixu/TruenorthSNN-Simulator/blob/master/fig/add.png)
